@@ -1,8 +1,7 @@
 # Developer Manual
 
 ## How to Install and Run Locally
-To run Job Checker locally, first clone the repository however you choose.
-E.g. `git clone git@github.com:rwang133/inst377-final-project.git` for SSH
+To run Job Checker locally, first clone the repository however you choose (e.g. `git clone git@github.com:rwang133/inst377-final-project.git` for SSH).
 
 Next, make sure you have node installed. This can be done by running
 `nvm install node`
@@ -11,7 +10,7 @@ in a MacOS terminal or PowerShell.
 If nvm is not installed, use [this guide](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) to install it.
 
 You can verify the installations by running
-`nvm -v` and `node -v`
+`nvm -v` and `node -v`.
 
 After you've installed node, run
 `npm i @supabase/supabase-js body-parser express nodemon`
@@ -26,7 +25,7 @@ companyName
 companyDomain
 logoURL
 jobDesc
-flagged
+flagged.
 
 Although not good for security, if you want the app to work, you may also have to go to the SQL editor using the same navigation bar and run
 ```
