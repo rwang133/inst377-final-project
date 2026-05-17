@@ -52,9 +52,9 @@ There are no particular tests for this app, though you can use [Insomnia](https:
 
 ## API Endpoints
 Here are the API endpoints for this project and their uses:
-1. app.post(/savedJobs) => Write data to the database
-2. app.get(/savedJobs) => Retrieve data from the database for the Saved Jobs page
-3. app.get(/assessJob) => Retrieve data from Logo.dev for the Assess Job page
+1. app.post('/savedJobs') => Write data to the database
+2. app.get('/savedJobs') => Retrieve data from the database for the Saved Jobs page
+3. app.get('/assessJob') => Retrieve data from Logo.dev for the Assess Job page
 4. app.get('/') => Retrieve data for the homepage
 
 ## Known Bugs and Future Development
