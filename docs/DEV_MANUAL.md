@@ -51,7 +51,7 @@ in the terminal to start the application. Use CTRL + C to quit.
 There are no particular tests for this app, though you can use [Insomnia](https://insomnia.rest/) to test whether the get/post functions are working, such as by sending sample JSON to the database to check if it stores correctly. The app will also log errors with get/post in the terminal or browser console.
 
 ## API Endpoints
-Here are the API endpoints for this project and their uses
+Here are the API endpoints for this project and their uses:
 1. app.post(/savedJobs) => Write data to the database
 2. app.get(/savedJobs) => Retrieve data from the database for the Saved Jobs page
 3. app.get(/assessJob) => Retrieve data from Logo.dev for the Assess Job page
