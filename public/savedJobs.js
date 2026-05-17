@@ -26,7 +26,6 @@ async function loadJobs() {
         let websiteCount = 0;
 
         jobs.forEach(post => {
-
             const flags = post.flagged || '';
 
             if (/payment/i.test(flags)) paymentCount++;
@@ -59,7 +58,7 @@ async function loadJobs() {
                 labels: [
                     'Payment Mentioned',
                     'Urgent Mentioned',
-                    'Remote Work',
+                    'Remote Mentioned',
                     'Suspicious Address',
                     'Applying Using Third-Party'
                 ],

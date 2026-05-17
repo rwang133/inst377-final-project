@@ -18,7 +18,7 @@ async function processForm() {
 
     const instr = document.createElement("p");
     instr.textContent = `Here are the results for "${query.replace("+", " ")}." Please click on the best match.`;
-    
+
     container.append(instr);
 
     data.forEach((brand, index) => {
@@ -143,26 +143,25 @@ function getResults(email, jobTitle, name, domain, url, desc, q1, q2) {
     }
 }
 
-async function addPost (userEmail, jobTitle, companyName, companyDomain, logoURL, jobDesc, flagged) {
+async function addPost(userEmail, jobTitle, companyName, companyDomain, logoURL, jobDesc, flagged) {
     try {
+        await fetch('/savedJobs', {
+            method: 'POST',
+            body: JSON.stringify({
+                userEmail,
+                jobTitle,
+                companyName,
+                companyDomain,
+                logoURL,
+                jobDesc,
+                flagged
+            }),
+            headers: {
+                'content-type': 'application/json',
+            },
+        }).then((result) => result.json());
 
-    await fetch('/savedJobs', {
-    method: 'POST',
-    body: JSON.stringify({
-      userEmail,
-      jobTitle,
-      companyName,
-      companyDomain,
-      logoURL,
-      jobDesc,
-      flagged
-    }),
-    headers: {
-      'content-type': 'application/json',
-    },
-  }).then((result) => result.json());
-
-} catch (e) {
-    console.log(e);
-}
+    } catch (e) {
+        console.log(e);
+    }
 }
