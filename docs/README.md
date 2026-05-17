@@ -6,7 +6,7 @@ Job Checker was built to help users verify the legitimacy of job postings. The u
 ## Supported Browsers/Devices
 This app was designed to run on PCs and larger screens. While it can be accessed from a mobile device, some elements may be small and difficult to read without zooming in. It is also recommended that you use Chrome or Firefox. Safari works, besides the font family.
 
-## Link to Developer Manual
-
+## Developer Manual
+[Link](DEV_MANUAL.md)
 
 
