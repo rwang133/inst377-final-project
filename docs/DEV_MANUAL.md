@@ -18,7 +18,7 @@ to install the dependencies.
 
 You will also need to make an account on [Supabase](https://supabase.com/) and [Logo.dev](https://www.logo.dev/) for the next steps.
 
-Once you've logged into Supabase, create a new project and fill in the organization details as you please. Make sure that RLS is *disabled*. Next, go to the Table Editor using the navigation bar on the left side of the screen. Create a new table named *savedJobs* with these column names, using varchar as the data type:
+Once you've logged into Supabase, create a new project and fill in the organization details as you please. Make sure that RLS is **disabled**. Next, go to the Table Editor using the navigation bar on the left side of the screen. Create a new table named "savedJobs" with these column names, using varchar as the data type:
 userEmail
 jobTitle
 companyName
