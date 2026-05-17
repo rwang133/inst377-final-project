@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="consistent.css">
+        <link rel="stylesheet" href="assessJob.css">
+        <script src="assessJob.js" defer></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="bar">
+            <h1>Job Checker</h1>
+        </header>
+
+        <!-- Navigation Section -->
+        <nav id="main-nav">
+            <ul>
+                <a href="home.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="assessJob.html"><li>Assess Job</li></a>
+                <a href="savedJobs.html"><li>Saved Jobs</li></a>
+                <a href="help.html"><li>Help</li></a>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <div class="main-container">
+            <div class="content-area">
+                <div class="content-box">
+                <form id="jobDetailsForm" onsubmit="processForm(); return false;">
+
+                    <label for="userEmail">Your Email:</label>
+                    <input type="email" id="userEmail" name="userEmail"><br><br>
+
+                    <label for="jobTitle">Job Title*:</label>
+                    <input type="text" id="jobTitle" name="jobTitle"><br><br>
+                    
+                    <label for="companyName">Company Name*:</label>
+                    <input type="text" id="companyName" name="companyName" required><br><br>
+                   
+                    <label for="jobDesc">Job Description*:</label><br>
+                    <textarea id="jobDesc" name="jobDesc" rows="10" cols="70"></textarea><br><br>
+
+                    <fieldset id="q1">
+                        <legend>Q1. Can the link to the application be found on the company's website?</legend>
+                        <label>
+                            <input type="radio" value="yes" name="q1">
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" value="no" name="q1">
+                            No
+                        </label>
+                    </fieldset><br>
+
+                   <fieldset id="q2">
+                        <legend>Q2. If the company has a physical address, is it located in a shared building?</legend>
+                        <label>
+                            <input type="radio" value="yes" name="q2">
+                            Yes
+                        </label>
+                        <label>
+                            <input type="radio" value="no" name="q2">
+                            No
+                        </label>
+                    </fieldset><br>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+                </div>
+
+                <div class="content-box" id="logoResults"></div>
+
+                <div class="content-box" id="scanResults"></div>
+
+            </div>
+
+            <div class="content-box" id="flagged">
+                <p>Flagged:</p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bar">
+            <p>Website by Rachel Wang</p>
+        </footer>
+    </body>
+</html>

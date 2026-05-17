@@ -1,0 +1,74 @@
+body {
+    font-family: monospace;
+    background-color: lightcyan;
+}
+
+.content-box {
+    margin: 1rem;
+}
+
+#main-nav li {
+    display: inline-block;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#main-nav li:hover {
+    background-color: pink;
+}
+
+header, #main-nav, .bar {
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header, .bar {
+    background-color: lavender;
+}
+
+#main-nav {
+    background-color: lavenderblush;
+}
+
+.main-container {
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: honeydew;
+}
+
+input[type=submit], button {
+    font-family: monospace;
+    border: 0.1rem solid black;
+    background-color: aquamarine;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: turquoise;
+}
+
+#logoResults button {
+    background-color: oldlace;
+    width: 25%;
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#logoResults button:hover {
+    background-color: peachpuff;
+}
+
+#logoResults {
+    text-align: center;
+}
+
+#flagChart, #jobsList {
+    border: 0.1rem solid black;
+    padding: 1rem;
+    background-color: mintcream;
+}
